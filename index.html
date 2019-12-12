@@ -44,9 +44,9 @@
       </div>
     </nav>
 
-    <section class="container-fluid px-0">
+    <section class="container-fluid ">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 px-0">
           <div
             id="heading"
             class="text-white text-center d-none d-lg-block mt-5"
@@ -71,6 +71,89 @@
       </div>
     </section>
 
+    <section class="container-fluid px-0">
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img
+            src="images\baby_Candy.jpg"
+            alt="baby holding candy jar"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 bler mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="images\lollipop.png"
+                alt="lollipop"
+                class="d-none d-lg-inline"
+                style="width: 40px;height: 40px;"
+              />
+              <p class="lead">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Earum,Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id, impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Exercitationem, minima!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 bler mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="images\lollipop.png"
+                alt="lollipop"
+                class="d-none d-lg-inline"
+                style="width: 40px;height: 40px;"
+              />
+              <p class="lead">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Earum,Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id, impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Exercitationem, minima!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <img
+            src="images\Cup_Candy.jpg"
+            alt="Candy jar"
+            class="img-fluid float-right"
+          />
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="images\Candy.jpg" alt="Candy " class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 bler mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="images\lollipop.png"
+                alt="lollipop"
+                class="d-none d-lg-inline"
+                style="width: 40px;height: 40px;"
+              />
+              <p class="lead">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Earum,Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id, impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Exercitationem, minima!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -86,5 +169,13 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $("#nav1");
+          $nav.toggleClass("scroll", $(this).scrollTop() > $nav.height());
+        })
+      })
+    </script>
   </body>
 </html>
